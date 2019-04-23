@@ -10,9 +10,33 @@ The scope of this challenge is to create an API application. We are mainly inter
 - [x] Build an endpoint that shows the distribution of years in which buildings were added to the dataset (​STR_DATUM​)
 - [x] Make both endpoints filterable by zip codes
 
+## Dependencies:
+
+* Ruby 2.5.x
+* SQLite3
+* Data file (from the above link)
+
 ## Usage:
 
-* Import data: `rake 'data:import[<path_to_csv>, <batch_size>]'`
+1. Install gems: `bundle install`
+2. Create & Migrate DB: `rake db:create && rake db:migrate`
+3. Import data: `rake 'data:import[<path_to_csv>, <batch_size>]'`
+4. Start server: `rails s`
+5. Go to http://localhost:3000/buildings
+
+## Endpoints:
+
+* `/buildings` -> First 100 buildings (Just for showcase)
+* `/buildings/zipcode_distribution` -> Count grouped by zipcode
+* `/buildings/year_distribution` -> Count grouped by year
+
+**Filtering:**
+* You can filter any endpoint with a `zipcode` query string, like so:
+```
+    http://localhost:3000/buildings?zipcode=10115
+    http://localhost:3000/buildings/zipcode_distribution?zipcode=10115
+    http://localhost:3000/buildings/year_distribution?zipcode=10115
+```
 
 ## Data Model
 
