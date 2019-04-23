@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/buildings', to: 'buildings#index'
+  get '/buildings/per_zipcode', to: 'buildings#per_zipcode'
 end
