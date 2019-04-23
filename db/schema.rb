@@ -10,6 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_04_23_181349) do
+
+  create_table "buildings", force: :cascade do |t|
+    t.integer "objectid"
+    t.integer "adressid"
+    t.integer "hnr"
+    t.string "hnr_zusatz"
+    t.string "str_name"
+    t.integer "str_nr"
+    t.integer "plz"
+    t.string "bez_name"
+    t.integer "bez_nr"
+    t.string "ort_name"
+    t.integer "ort_nr"
+    t.string "plr_name"
+    t.integer "plr_nr"
+    t.integer "blk"
+    t.datetime "adr_datum"
+    t.datetime "str_datum"
+    t.string "qualitaet"
+    t.string "typ"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
