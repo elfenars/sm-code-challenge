@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  adressid: 1
+  hnr: 1
+  hnr_zusatz: MyString
+  str_name: MyString
+  str_nr: 1
+  plz: 1
+  bez_name: MyString
+  bez_nr: 1
+  ort_name: MyString
+  ort_nr: 1
+  plr_name: MyString
+  plr_nr: 1
+  blk: 1
+  adr_datum: 2019-04-23 20:13:49
+  str_datum: 2019-04-23 20:13:49
+  qualitaet: MyString
+  typ: MyString
+
+two:
+  adressid: 1
+  hnr: 1
+  hnr_zusatz: MyString
+  str_name: MyString
+  str_nr: 1
+  plz: 1
+  bez_name: MyString
+  bez_nr: 1
+  ort_name: MyString
+  ort_nr: 1
+  plr_name: MyString
+  plr_nr: 1
+  blk: 1
+  adr_datum: 2019-04-23 20:13:49
+  str_datum: 2019-04-23 20:13:49
+  qualitaet: MyString
+  typ: MyString

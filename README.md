@@ -14,6 +14,7 @@ The scope of this challenge is to create an API application. We are mainly inter
 
 Column name | Description  | Data Type
 ----------- | ------------ | ----------
+objectid    | Original ID | INT
 adressid    | Address ID   | INT
 hnr         | House number without additional information | INT
 hnr_zusatz  | Additional information for address | VARCHAR
