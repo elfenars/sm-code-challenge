@@ -8,7 +8,7 @@ The scope of this challenge is to create an API application. We are mainly inter
 - [x] Build a data importer that brings the data into your application
 - [x] Build an endpoint that delivers the number of buildings per zip code
 - [x] Build an endpoint that shows the distribution of years in which buildings were added to the dataset (​STR_DATUM​)
-- [ ] Make both endpoints filterable by zip codes
+- [x] Make both endpoints filterable by zip codes
 
 ## Usage:
 
